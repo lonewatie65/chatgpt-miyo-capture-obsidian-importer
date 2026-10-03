@@ -2,6 +2,14 @@
 
 This workflow uses **Miyo Capture** to export ChatGPT conversations as Markdown, then a simple **macOS Shortcut** to choose individual conversations from the export and move them into any folder you want in your Obsidian vault.
 
+## Install the Shortcut
+
+If you just want to use the finished Shortcut, install it from Apple's iCloud Shortcuts sharing page:
+
+**[Add ChatGPT → Obsidian Importer Shortcut](https://www.icloud.com/shortcuts/475cb283198a463d8fedd5f41367adc8)**
+
+The complete manual build instructions are included below so you can inspect or recreate the workflow yourself.
+
 ## Requirements
 
 - macOS
