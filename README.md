@@ -2,11 +2,13 @@
 
 This workflow uses **Miyo Capture** to export ChatGPT conversations as Markdown, then a simple **macOS Shortcut** to choose individual conversations from the export and move them into any folder you want in your Obsidian vault.
 
+> This is an independent community workflow and is not affiliated with or endorsed by Miyo/Brevilabs, OpenAI, or Obsidian.
+
 ## Install the Shortcut
 
 If you don't want to build it manually, you can install the ready-made Shortcut:
 
-**[Install Miyo ChatGPT Obsidian Importer](https://www.icloud.com/shortcuts/8bbef99bbe5b4a2c997aa50d26d3ce3b)**
+**[Install Miyo Capture ChatGPT Obsidian Importer macOS Shortcut](https://www.icloud.com/shortcuts/8bbef99bbe5b4a2c997aa50d26d3ce3b)**
 
 During installation, Shortcuts asks you to choose the Obsidian folder where imported ChatGPT conversations should be saved. The shared Shortcut does not contain a hard-coded personal vault path.
 
@@ -18,13 +20,13 @@ During installation, Shortcuts asks you to choose the Obsidian folder where impo
 - Apple Shortcuts
 - Obsidian (if using this specifically for an Obsidian vault)
 - Google Chrome
-- Miyo Capture Chrome extension
+- Miyo Capture Extension for Chrome
 
-> Miyo Capture currently depends on Chrome for capturing/exporting ChatGPT conversations.
+> The Miyo Capture Extension currently depends on Chrome for capturing/exporting ChatGPT conversations.
 
 ## What Miyo Provides
 
-Miyo exports ChatGPT conversations as individual Markdown files.
+The Miyo Capture Extension exports ChatGPT conversations as individual Markdown files.
 
 The exported Markdown includes useful frontmatter such as:
 
@@ -41,7 +43,7 @@ Example:
 
 `2026-09-27 Network storage setup (6ab88ace).md`
 
-Miyo can export conversations using a date range, including a custom date range.
+The Miyo Capture Extension can export conversations using a date range, including a custom date range.
 
 The limitation is that the custom export selection in the extension is date-based rather than letting you select individual conversation titles.
 
@@ -115,7 +117,7 @@ Expand the action and configure:
 
 When the Shortcut runs, this produces a list containing the conversation filenames exported by Miyo.
 
-Because Miyo includes the conversation date and title in the filename, the list becomes a convenient conversation picker.
+Because the Miyo Capture Extension includes the conversation date and title in the filename, the list becomes a convenient conversation picker.
 
 Example:
 
@@ -189,7 +191,7 @@ Enable:
 
 This is useful if you intend to export the same ChatGPT conversation again later.
 
-Because Miyo includes the conversation identifier in the filename, a newer export of the same conversation can replace the older Markdown copy rather than creating another copy.
+Because the Miyo Capture Extension includes the conversation identifier in the filename, a newer export of the same conversation can replace the older Markdown copy rather than creating another copy.
 
 This makes it possible to refresh archived conversations as they continue to grow.
 
@@ -243,7 +245,7 @@ The complete Shortcut is:
 1. Open ChatGPT in Chrome.
 2. Install the Miyo Capture Extension
 3. Sign into your ChatGPT account as needed
-4. Use Miyo Capture to export the desired date range.
+4. Use the Miyo Capture Extension to export the desired date range.
 5. Save/download the resulting ZIP wherever you prefer (there's no need to extract the zip file)
 6. Run the macOS Shortcut.
 7. Select the Miyo ZIP.
@@ -261,12 +263,12 @@ If the destination is inside an Obsidian vault, the conversations immediately be
 
 ## Why bother?
 
-Miyo already does the difficult part very well: converting ChatGPT conversations into clean Markdown with useful metadata.
+The Miyo Capture Extension already does the difficult part very well: converting ChatGPT conversations into clean Markdown with useful metadata.
 
 The Shortcut adds one useful layer:
 
 **selective importing by conversation title.**
 
-Instead of importing every conversation contained in a date-range export, you can use Miyo to capture a broad period and then choose exactly which conversations deserve a place in your vault.
+Instead of importing every conversation contained in a date-range export, you can use the Miyo Capture Extension to capture a broad period and then choose exactly which conversations deserve a place in your vault.
 
 Once imported into Obsidian, old ChatGPT conversations can be searched alongside the rest of your notes, making it much easier to rediscover previous research, troubleshooting, projects, and discussions.
